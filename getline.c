@@ -12,8 +12,10 @@ char *_getline(void)
 {
 	static char buffer[BUFFER_SIZE];
 	static int buffer_pos;
-	int chars_read = 0; char *line = NULL;
-	int line_pos = 0; int line_size = 0;
+	int chars_read = 0;
+	char *line = NULL;
+	int line_pos = 0;
+	int line_size = 0;
 
 	while (1)
 	{

@@ -43,9 +43,10 @@ int alias(char **args, char __attribute__((__unused__)) **front)
 					break;
 				}
 				temp = temp->next;
+
+				if (!temp)
+					 perror("error");
 			}
-			if (!temp)
-				 perror("error");
 		}
 		else
 			set_alias(args[i], value);

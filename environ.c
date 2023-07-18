@@ -63,6 +63,6 @@ char **_getenv(const char *var)
 }
 
 /*
- * this is a heleper file 
+ * this is a heleper file
  * for the enviroments files
  */
