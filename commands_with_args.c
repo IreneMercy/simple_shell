@@ -5,6 +5,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/*
+ * split_line - splits the commands.
+ *
+ * @line: takes the argument passed
+ */
 char **split_line(char *line)
 {
 	char **tokens = malloc(sizeof(char *) * 32);
@@ -20,6 +25,11 @@ char **split_line(char *line)
 	return (tokens);
 }
 
+/*
+ * execute_line - executes the commands of split line
+ *
+ * @line: takes the argument passed
+ */
 void execute_line(char *line)
 {
 	char **tokens = split_line(line);

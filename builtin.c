@@ -30,6 +30,9 @@ int (*get_builtin(char *command))(char **args, char **front)
  * @args: An array of arguments containing the exit value.
  * @front: A double pointer to the beginning of args.
  *
+ *  Return: If there are no arguments - -3.
+ *         If the given exit value is invalid - 2.
+ *         O/w - exits with the given status value.
  */
 
 int shell_exit(char **args, char **front)
@@ -59,6 +62,11 @@ int shell_exit(char **args, char **front)
 	exit(status);
 }
 
+/**
+ *free_alias_list - frees the meory for alias
+ *
+ *@head: takes the parameters to be passed
+ */
 void free_alias_list(alias_t *head)
 {
 	alias_t *next;

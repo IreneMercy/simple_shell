@@ -87,8 +87,8 @@ int _setenv(char **args, char __attribute__((__unused__)) **front)
 /**
  * _unsetenv - Removes an environmental variable from the PATH.
  *
- * args: picks the arguments past to it
- * front: picks the current argument
+ * @args: picks the arguments past to it
+ * @front: picks the current argument
  *
  * Return: Always returns 0.
  */

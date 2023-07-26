@@ -3,7 +3,7 @@
 
 /*
  *
- * _getline - reads a line of input from the user
+ * _getline - Reads input from a stream.
  *
  * Return: a pointer to the line of input, or NULL on failure
  */
