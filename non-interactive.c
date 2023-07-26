@@ -3,8 +3,6 @@
 
 /**
  * nonInteractive - handles non interactive mode
- * @argc: arguments
- * @argv: array of arguments
  * Return: 0
  */
 
